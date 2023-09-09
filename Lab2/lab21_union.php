@@ -1,5 +1,5 @@
-<?php include ("lab21 header.php"); ?>
+<?php include ("lab21_header.php"); ?>
 <p>
-Hola, este es el contenido.
+    Hola, aqui esta el contenido que se mando.
 </p>
-<?php include ("lab21 footer.php"); ?>
+<?php include("lab21_footer.php");?>
