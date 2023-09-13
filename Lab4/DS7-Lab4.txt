@@ -1,0 +1,52 @@
+Desarrollo de Software VII
+
+Laboratorio i 4 — Prof. Regis Rivera
+
+Objetivo: Desarrollar aplicaciones web en PHP con procesamiento de formularios que resuelvan
+los siguientes enunciados:
+
+Laboratorio 4.1: Aplicación web con imagen dinámica.
+
+Crear una aplicación web en la cual se puedan elegir 3 imágenes de manera dinámica dependiendo
+del valor introducido por el usuario, este será un indicador de desempeño en las ventas.
+
+Si las ventas superan el 80%, se mostrará:
+
+Si las ventas están entre 50% a 79% se mostrará:
+
+De lo contrario, se mostrará:
+
+Imagen original: http://mygenomix.files.wordpress.com/2010/07/semaforo.ipq (Se debe recortar
+en 3 imágenes con el nombre que usted desee, los cuales se utilizaran de acuerdo a lo solicitado)
+
+Laboratorio 4.2: Calculo de un factorial de acuerdo a un valor de entrada.
+
+Realizar una aplicación web que calcule el factorial de un número N. Leer el número desde un
+formulario HTML y entregar la respuesta en una página PHP.
+
+Fórmula para calcular el factorial de un numero N
+NE =1*X2%X3X. EN
+
+Laboratorio 4.3: Manejo de Arreglos P1
+
+Llenar un arreglo unidimensional de 20 elementos, luego de llenar el arreglo mostrar en pantalla la
+posición y el valor del elemento mayor almacenado en el arreglo.
+
+Todos los elementos deben ser diferentes.
+Laboratorio 4.4: Manejo de Arreglos P2
+
+Llenar un arreglo solo con números pares. Si se introduce un número impar, solicitar al usuario
+introduzca un valor correcto hasta que así sea; luego continuar con el siguiente número.
+
+Laboratorio 4.5: Manejo de Matrices
+Diseñar una aplicación web en PHP que genere una matriz identidad de orden N (Donde N es un
+
+número Par). La matriz identidad tiene todos los elementos de la diagonal principal igual a uno (1),
+todos los demás elementos son igual a cero (0). Ejemplo para N igual a4:
+
+(> ie)
+Eolo
+
+ooo
+(>)
+
