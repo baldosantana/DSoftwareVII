@@ -13,7 +13,7 @@ if ($ventas > 80) {
     $emoji = 'triste.png';
 }
 
-// Redirigir de nuevo a la p�gina principal (index.php) con el emoji correspondiente.
-header("Location: GPT_index.php?emoji=$emoji");
+// Redirigir de nuevo a la página principal (index.php) con el emoji correspondiente.
+header("Location: lab4.1_index.php?emoji=$emoji");
 exit;
 ?>

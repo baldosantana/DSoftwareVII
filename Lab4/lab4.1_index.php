@@ -14,7 +14,7 @@ $emoji = isset($_GET['emoji']) ? $_GET['emoji'] : '';
 </head>
 <body>
     <h1>Indicador de Desempeño en Ventas</h1>
-    <form action="GPT_emoji.php" method="post">
+    <form action="lab4.1_emoji.php" method="post">
         <label for="ventas">Porcentaje de Ventas:</label>
         <input type="number" name="ventas" id="ventas" required>
         <button type="submit">Mostrar Emoji</button>
