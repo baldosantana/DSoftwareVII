@@ -18,7 +18,7 @@ use function PHPSTORM_META\type;
                 $factorial = $factorial * $i;
             }
             
-            return "El factorial de: ".$this->valor." es: ".$factorial;
+            return "El factorial del número ingresado: ".$this->valor." es: ".$factorial;
         }
     }
 
@@ -35,13 +35,13 @@ use function PHPSTORM_META\type;
             $resultadoEva = "";
 
             if ($this->valor >= 80) {
-                $resultadoEva =  "<img src='image/carita_verde.png' alt='Mi Imagen'>";
+                $resultadoEva =  "<img src='image/happy.png' alt='Mi Imagen'>";
             } else if ($this->valor>= 50 && $this->valor <= 79) {
-                $resultadoEva ="<img src='image/carita_amarilla.png' alt='Mi Imagen'>";
+                $resultadoEva ="<img src='image/poker.png' alt='Mi Imagen'>";
             } else if ($this->valor >= 0 && $this->valor <= 49 ) {
-                $resultadoEva = "<img src='image/carita_roja.png' alt='Mi Imagen'>";
+                $resultadoEva = "<img src='image/triste.png' alt='Mi Imagen'>";
             }else {
-                $resultadoEva = "No haz introducido ningun valor.";
+                $resultadoEva = "Requiere introducir un valor.";
             }
 
             return $resultadoEva;

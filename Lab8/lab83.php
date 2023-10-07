@@ -11,7 +11,7 @@
 
 <body>
     <h1>Matriz</h1>
-    <form action="http://localhost:3000/lab8.3.php" method="POST">
+    <form action="http://localhost:3000/Lab8/lab83.php" method="POST">
 
         <label for="">Fila</label>
         <input type="text" name="fila">
