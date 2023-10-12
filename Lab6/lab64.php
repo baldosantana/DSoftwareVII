@@ -1,7 +1,5 @@
 <?php
 
-
-
 include("lab64_class_lib.php");
 
 
