@@ -1,18 +1,18 @@
 <?php
 	require_once "main.php";
 
-	/*== Almacenando id ==*/
+	/*Almacena id*/
     $id=limpiar_cadena($_POST['categoria_id']);
 
 
-    /*== Verificando categoria ==*/
+    /* Valida categoria */
 	$check_categoria=conexion();
 	$check_categoria=$check_categoria->query("SELECT * FROM categoria WHERE categoria_id='$id'");
 
     if($check_categoria->rowCount()<=0){
     	echo '
             <div class="notification is-danger is-light">
-                <strong>¡Ocurrio un error inesperado!</strong><br>
+                <strong>Error!</strong><br>
                 La categoría no existe en el sistema
             </div>
         ';
@@ -22,16 +22,16 @@
     }
     $check_categoria=null;
 
-    /*== Almacenando datos ==*/
+    /* Almacena datos */
     $nombre=limpiar_cadena($_POST['categoria_nombre']);
     $ubicacion=limpiar_cadena($_POST['categoria_ubicacion']);
 
 
-    /*== Verificando campos obligatorios ==*/
+    /* Verifica campos obligatorios*/
     if($nombre==""){
         echo '
             <div class="notification is-danger is-light">
-                <strong>¡Ocurrio un error inesperado!</strong><br>
+                <strong>Error!</strong><br>
                 No has llenado todos los campos que son obligatorios
             </div>
         ';
@@ -39,11 +39,11 @@
     }
 
 
-    /*== Verificando integridad de los datos ==*/
+    /*Verificando integridad de los datos*/
     if(verificar_datos("[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]{4,50}",$nombre)){
         echo '
             <div class="notification is-danger is-light">
-                <strong>¡Ocurrio un error inesperado!</strong><br>
+                <strong>Error!</strong><br>
                 El NOMBRE no coincide con el formato solicitado
             </div>
         ';
@@ -54,7 +54,7 @@
     	if(verificar_datos("[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]{5,150}",$ubicacion)){
 	        echo '
 	            <div class="notification is-danger is-light">
-	                <strong>¡Ocurrio un error inesperado!</strong><br>
+	                <strong>Error!</strong><br>
 	                La UBICACION no coincide con el formato solicitado
 	            </div>
 	        ';
@@ -63,14 +63,14 @@
     }
 
 
-    /*== Verificando nombre ==*/
+    /*Verificando nombre*/
     if($nombre!=$datos['categoria_nombre']){
 	    $check_nombre=conexion();
 	    $check_nombre=$check_nombre->query("SELECT categoria_nombre FROM categoria WHERE categoria_nombre='$nombre'");
 	    if($check_nombre->rowCount()>0){
 	        echo '
 	            <div class="notification is-danger is-light">
-	                <strong>¡Ocurrio un error inesperado!</strong><br>
+	                <strong>Error!</strong><br>
 	                El NOMBRE ingresado ya se encuentra registrado, por favor elija otro
 	            </div>
 	        ';
@@ -80,7 +80,7 @@
     }
 
 
-    /*== Actualizar datos ==*/
+    /* Actualizar datos*/
     $actualizar_categoria=conexion();
     $actualizar_categoria=$actualizar_categoria->prepare("UPDATE categoria SET categoria_nombre=:nombre,categoria_ubicacion=:ubicacion WHERE categoria_id=:id");
 
@@ -100,7 +100,7 @@
     }else{
         echo '
             <div class="notification is-danger is-light">
-                <strong>¡Ocurrio un error inesperado!</strong><br>
+                <strong>Error!</strong><br>
                 No se pudo actualizar la categoría, por favor intente nuevamente
             </div>
         ';

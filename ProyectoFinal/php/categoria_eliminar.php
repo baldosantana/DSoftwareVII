@@ -28,7 +28,7 @@
 		    }else{
 		        echo '
 		            <div class="notification is-danger is-light">
-		                <strong>¡Ocurrio un error inesperado!</strong><br>
+		                <strong>Error!</strong><br>
 		                No se pudo eliminar la categoría, por favor intente nuevamente
 		            </div>
 		        ';
@@ -37,7 +37,7 @@
     	}else{
     		echo '
 	            <div class="notification is-danger is-light">
-	                <strong>¡Ocurrio un error inesperado!</strong><br>
+	                <strong>Error!</strong><br>
 	                No podemos eliminar la categoría ya que tiene productos asociados
 	            </div>
 	        ';
@@ -46,7 +46,7 @@
     }else{
     	echo '
             <div class="notification is-danger is-light">
-                <strong>¡Ocurrio un error inesperado!</strong><br>
+                <strong>Error!</strong><br>
                 La CATEGORIA que intenta eliminar no existe
             </div>
         ';
