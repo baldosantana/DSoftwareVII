@@ -49,7 +49,9 @@
         print("</table>");
 
         print("<p>Numero total de votos emitidos: $totalVotos<\p>");
-        print("<p><a href = 'http://localhost:3000/lab10.1.php'>Pagina Votacion<\p>");
+        print("<p><a href = 'http://localhost:3000/Lab10/lab10.1.php'>Pagina Votacion<\p>");
+
+        
         
 
     ?>
